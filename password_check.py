@@ -24,7 +24,6 @@ def main():
                                                            password))
 def is_valid_password(password):
     """Determine if the provided password is valid."""
-
     if len(password) < 2 and len(password) > 6:
         return False
     count_lower = 0
@@ -32,7 +31,6 @@ def is_valid_password(password):
     count_digit = 0
     count_special = 0
     for char in password:
-
         if char.lower():
             count_digit += 1
         elif char.upper():
@@ -44,10 +42,8 @@ def is_valid_password(password):
 
     if count_digit > 0 and count_lower > 0 and count_upper > 0 and count_special > 0:
         return True
-
     elif count_digit == 0:
         return False
-
     else:
         return False
 
