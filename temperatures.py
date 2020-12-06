@@ -31,3 +31,4 @@ def fahrenheit(celsius):
     return (celsius-32)*5/9.0
 celsius = float(input("Celsius: "))
 print(fahrenheit(celsius))
+
